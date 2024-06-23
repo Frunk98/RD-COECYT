@@ -25,7 +25,8 @@ El MEHC evalúa las habilidades de conducción del cadete en la realización de 
 
 ## Programas Principales
 
-### [OBD_SD_MQTT_LCD_final](https://github.com/Frunk98/RD-COECYT/tree/main/Programas/OBD_SD_MQTT_LCD_final)
+### Programa para el módulo OBDII
+[OBD_SD_MQTT_LCD_final](https://github.com/Frunk98/RD-COECYT/tree/main/Programas/OBD_SD_MQTT_LCD_final)
 
 Este programa incluye varias bibliotecas esenciales para su funcionamiento:
 
