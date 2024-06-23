@@ -1,7 +1,5 @@
 # Sistema de Evaluación Inteligente de Factores que Afectan las Competencias de Conducción Vehicular para Policías en Formación
 
-![MEHC](https://github.com/Frunk98/RD-COECYT/blob/main/Imagenes/MEHC.jpg)
-
 ## Descripción
 
 Este proyecto tiene como objetivo desarrollar un sistema de evaluación objetiva y subjetiva que mida, valore e infiera las competencias de manejo de los Cadetes de la Academia de Policía de Saltillo (AdP-S). El sistema está diseñado para proporcionar una evaluación integral de las habilidades de conducción vehicular, utilizando una combinación de datos objetivos y subjetivos para ofrecer una valoración precisa y útil para los instructores y cadetes.
