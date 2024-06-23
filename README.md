@@ -39,4 +39,36 @@ Este programa incluye varias bibliotecas esenciales para su funcionamiento:
 - `Adafruit_GFX.h`: Biblioteca para gráficos de Adafruit.
 - `Adafruit_SSD1306.h`: Biblioteca para la pantalla OLED SSD1306 de Adafruit.
 
+### Inicialización y Configuración
+
+- `Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);`: Inicializa la pantalla OLED.
+- `HardwareSerial mySerial(2);`: Inicializa un segundo puerto serial.
+- `GP9 imu(mySerial);`: Inicializa el objeto imu para la comunicación Serial con la GP9.
+- `WiFiClient espClient;`: Cliente WiFi.
+- `PubSubClient client(espClient);`: Cliente MQTT.
+
+#### Configuración de la red WiFi
+
+- `const char* ssid = "";`: Nombre de la red.
+- `const char* password = "";`: Contraseña de la red.
+
+#### Configuración del broker MQTT
+
+- `const char* mqtt_server = "";`: Dirección del servidor MQTT.
+- `const int mqtt_port = 1883;`: Puerto del servidor MQTT.
+- `const char* mqtt_user = "";`: Usuario MQTT.
+- `const char* mqtt_password = "";`: Contraseña MQTT.
+
+### Variables
+
+- `String currentTimestamp = "";`: Variable para almacenar el timestamp.
+- Variables CAN:
+  - `long unsigned int rxId;`: ID del mensaje recibido en el bus CAN.
+  - `float rpm, pvel, gas;`: Variables para almacenar los datos de OBDII.
+  - `unsigned char len = 0;`: Longitud del mensaje recibido.
+  - `unsigned char rxBuf[8];`: Buffer para almacenar los datos recibidos.
+  - `byte D_sol[8] = { 0x02, 0x01, 0x00, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA };`: Array del mensaje CAN.
+  - `int S_rxId;`: Variable para almacenar el ID del mensaje CAN.
+ 
+
 ### [VOLANTE_SD_MQTT_LCD_final](https://github.com/Frunk98/RD-COECYT/tree/main/Programas/VOLANTE_SD_MQTT_LCD_final)
