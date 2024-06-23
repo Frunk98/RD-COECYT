@@ -21,14 +21,14 @@ WiFiClient espClient;                                                     // Cli
 PubSubClient client(espClient);                                           // Cliente MQTT
 
 // Configuración de la red WiFi
-const char* ssid = "seifa";           // Nombre de la red
-const char* password = "91045843";    // Contraseña de la red
+const char* ssid = "";           // Nombre de la red
+const char* password = "";    // Contraseña de la red
 
 // Configuración del broker MQTT
-const char* mqtt_server = "192.168.0.100";    // Dirección del servidor MQTT
+const char* mqtt_server = "";    // Dirección del servidor MQTT
 const int mqtt_port = 1883;                   // Puerto del servidor MQTT
-const char* mqtt_user = "cinvestav";          // Usuario MQTT
-const char* mqtt_password = "robotino";       // Contraseña MQTT
+const char* mqtt_user = "";          // Usuario MQTT
+const char* mqtt_password = "";       // Contraseña MQTT
 
 
 //Constantes MUX
