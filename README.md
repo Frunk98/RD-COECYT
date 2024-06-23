@@ -1,4 +1,7 @@
 # RD-COECYT
-Programas para el módulo de OBDII, Volante, Broker MQTT y TimeStamp
+Programas y circuitos para los módulos de evaluación de habilidades de conducciónv (OBDII y Volante) 
+
+
+Programas para el Broker MQTT y TimeStamp
 
 
