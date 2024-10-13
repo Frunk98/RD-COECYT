@@ -24,7 +24,7 @@
 // Chip select del módulo de comunicación CAN
 MCP_CAN CAN0(4);                
 
-//Declaraciones de perifericos
+// Declaraciones de perifericos
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);  // Pantalla OLED
 HardwareSerial mySerial(2);  // Puerto Serial para la IMU
 GP9 imu(mySerial);  // Objeto IMU 
@@ -32,12 +32,12 @@ WiFiClient espClient;  // Cliente WiFi
 PubSubClient client(espClient);  //Cliente MQTT
 
 // Constantes para el protocolo MQTT
-const char* ssid = " ";
-const char* password = " ";
-const char* mqtt_server = " ";
-const int mqtt_port = 1833;
-const char* mqtt_user = " ";
-const char* mqtt_password = " ";
+const char* ssid = "";          // Nombre de la red
+const char* password = "";      // Contraseña de la red
+const char* mqtt_server = "";   // Dirección del servidor MQTT
+const int mqtt_port = 1833;     // Puerto del servidor MQTT
+const char* mqtt_user = "";     // Usuario MQTT
+const char* mqtt_password = ""; // Contraseña MQTT
 
 // Constantes del módulo de comunicación CAN
 long unsigned int rxId;
