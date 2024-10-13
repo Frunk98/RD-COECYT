@@ -4,8 +4,8 @@
 #include <SD.h>                // Biblioteca para el módulo de memoria MicroSD
 #include <WiFi.h>              // Biblioteca para la comunicación WiFi
 #include <PubSubClient.h>      // Biblioteca para la comunicación MQTT
-#include <Adafruit_GFX.h>      // Bibliotecas para la pantalla OLED
-#include <Adafruit_SSD1306.h>  // Bibliotecas para la pantalla OLED
+#include <Adafruit_GFX.h>      // Biblioteca para gráficos de Adafruit
+#include <Adafruit_SSD1306.h>  // Biblioteca para la pantalla OLED SSD1306
 
 // Pin de interrupción del módulo de comunicación CAN
 #define CAN0_INT 33           
