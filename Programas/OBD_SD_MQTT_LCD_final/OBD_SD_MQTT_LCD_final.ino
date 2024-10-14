@@ -151,10 +151,10 @@ void reconnect() {
 }
 //Función para enviar datos por MQTT
 void sendMqtt(String message) {
-  if (!client.connected()) {
-    reconnect();
+  if (!client.connected()) {  // Verifica si el cliente MQTT está conectado
+    reconnect();  // Si no está conectado, intenta reconectar
   }
-  client.publish("MEHC_OBD/data", message.c_str());
+  client.publish("MEHC_OBD/data", message.c_str()); // Publica el mensaje en el topic "MEHC_OBD/data"
 }
 //Función para leer y convertir los mensajes CAN
 void leer() {
